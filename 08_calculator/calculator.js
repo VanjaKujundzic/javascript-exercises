@@ -36,9 +36,14 @@ const power = function(x,y) {
 	
 };
 
-const factorial = function() {
+const factorial = function(n) {
+  const array= Array(n).fill(n).map((x, index) => x-index);
+  const result= array.reduce((total,curr) => total*curr,1)
+
+  return result;
 	
 };
+
 
 // Do not edit below this line
 module.exports = {
