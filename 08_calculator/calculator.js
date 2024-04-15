@@ -23,8 +23,16 @@ const multiply = function(array) {
   return array.reduce((total,curr)=> total*curr)
 };
 
-const power = function() {
+const power = function(x,y) {
+  let sum=0;
   
+  for(let i=0;i<=y;i++){
+    sum+= x*x;
+
+
+  }
+  return sum;
+
 	
 };
 
